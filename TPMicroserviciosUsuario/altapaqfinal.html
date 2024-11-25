@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/altafinal.css" rel="stylesheet" type="text/css">
+    <title>Confirmar Pedido</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body onload="loadData()">
+    <div class="container">
+        <div class="row">
+            <p>Por favor, compruebe que los datos sean correctos</p>
+        </div>
+        <form class="form-group" onsubmit="event.preventDefault(); crearPaquete();">
+            <h3>Datos del Remitente</h3>
+            <input type="text" id="nombreRemitente" placeholder="Nombre Remitente" required readonly />
+            <input type="text" id="apellidoRemitente" placeholder="Apellido Remitente" required readonly />
+            <input type="number" id="dniRemitente" placeholder="DNI Remitente" required readonly />
+            <input type="number" id="telefonoRemitente" placeholder="Teléfono Remitente" required readonly />
+            <input type="email" id="emailRemitente" placeholder="Email Remitente" required readonly />
+            <input type="text" id="calleRemitente" placeholder="Calle Remitente" required readonly />
+            <input type="number" id="alturaRemitente" placeholder="Altura Calle Remitente" required readonly />
+            <input type="text" id="localidadRemitente" placeholder="Localidad Remitente" required readonly />
+
+            <h3>Datos del Destinatario</h3>
+            <input type="text" id="nombreDestinatario" placeholder="Nombre Destinatario" required readonly />
+            <input type="text" id="apellidoDestinatario" placeholder="Apellido Destinatario" required readonly />
+            <input type="number" id="dniDestinatario" placeholder="DNI Destinatario" required readonly />
+            <input type="number" id="telefonoDestinatario" placeholder="Teléfono Destinatario" required readonly />
+            <input type="email" id="emailDestinatario" placeholder="Email Destinatario" required readonly />
+            <input type="text" id="calleDestinatario" placeholder="Calle Destinatario" required readonly />
+            <input type="number" id="alturaDestinatario" placeholder="Altura Calle Destinatario" required readonly />
+            <input type="text" id="localidadDestinatario" placeholder="Localidad Destinatario" required readonly />
+
+            <div class="col-sm-offset-2 col-sm-10">
+                <button class="button-alta" type="button" onclick="crearPaquete()">Confirmar y Crear Paquete</button>
+            </div>
+            <div id="result"></div>
+
+        </form>
+        <p><input type="button" value="Volver al menú" onclick="location.href='index.html'"></p>
+    </div>
+    <script src="js/datos.js"></script>
+    <script src="js/consultascript.js"></script>
+    <script>
+        // Usar jQuery para ejecutar loadData cuando el DOM esté listo
+        $(document).ready(function() {
+            loadData(); // Ejecuta la función cuando el documento esté completamente cargado
+        });
+    </script>
+</body>
+
+</html>

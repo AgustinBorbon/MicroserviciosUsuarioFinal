@@ -1,0 +1,6 @@
+@TPMicroserviciosUsuarioBack_HostAddress = http://localhost:5037
+
+GET {{TPMicroserviciosUsuarioBack_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

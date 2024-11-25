@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/alta.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <p>Datos del Destinatario</p>
+        </div>
+        <form class="form-group" onsubmit="event.preventDefault(); saveRecipientData();">
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre" required>
+            </div>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Apellido" required>
+            </div>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="dni" name="dni" placeholder="Dni" required>
+            </div>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="telefono" name="telefono" placeholder="Telefono" required>
+            </div>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="email" name="email" placeholder="Email" required>
+            </div>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="calle" name="calle" placeholder="Calle" required>
+            </div>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="altura" name="altura" placeholder="Altura" required>
+            </div>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="localidad" name="localidad" placeholder="Localidad" required>
+            </div>
+
+            <div class="col-sm-offset-2 col-sm-10">
+                <button class="button-alta" type="button" onclick="saveRecipientData()">Guardar Destinatario</button>
+            </div>
+        </form>
+        <p><input type="button" value="Volver al menú" onclick="location.href='index.html'"></p>
+    </div>
+    <script src="js/consultascript.js"></script>
+    <script src="js/datos.js"></script>
+</body>
+
+</html>

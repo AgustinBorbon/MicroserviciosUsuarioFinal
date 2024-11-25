@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/alta.css" rel="stylesheet" type="text/css">
+    <title>Buscar Paquete</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <p>Por favor, ingrese el número de paquete</p>
+        </div>
+        <form class="form-group">
+
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="numpaquete" name="numpaquete" placeholder="N° de paquete" required>
+            </div>
+            <div class="col-sm-offset-2 col-sm-10">
+                <button class="button-alta" type="button" class="btn btn-primary" onclick="buscarPaquete()">Buscar paquete</button>
+            </div>
+
+        </form>
+        <p><input type="button" value="Volver al menú" OnClick="location.href='index.html'"></p>
+    </div>
+    <script src="js/consultascript.js"></script>
+</body>
+
+</html>

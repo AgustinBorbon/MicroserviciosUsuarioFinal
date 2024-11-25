@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/alta.css" rel="stylesheet" type="text/css">
+    <title>Resultado del Paquete</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <p>Resultado del Paquete</p>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-10">
+                    <p style="font-size: 20px">Número de Paquete: <span id="numero-paquete">1</span></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-10 horizontal-align">
+                    <p style="font-size: 18px">Estado del Paquete</p>
+                    <input type="text" class="form-control" id="estado-paquete" value="Aprobado" disabled>
+                </div>
+            </div>
+            <div class="row" id="monto-pagar">
+                <div class="col-sm-10 horizontal-align">
+                    <p style="font-size: 18px">Monto para Pagar por el Servicio</p>
+                    <input type="text" class="form-control" id="monto" value="$1500" disabled>
+                </div>
+            </div>
+        </div>
+        <p><input type="button" value="Volver al menú" OnClick="location.href='index.html'"></p>
+    </div>
+    <script src="js/consultascript.js"></script>
+</body>
+
+</html>
